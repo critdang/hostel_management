@@ -3,7 +3,8 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 
+
     require_once('controllers/UserController.php');
     $usercontroller = new UserController();
-    $usercontroller-> getUser();
+    $usercontroller-> invoke();
 ?>
