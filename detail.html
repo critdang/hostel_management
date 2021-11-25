@@ -16,21 +16,32 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid ">
+            <div class="grid wide">
+                <!-- <button class="open-button" onclick="openForm()">Chat</button>
+                <div class="mini_chat" id="chatForm">
+                    <form action="" class= "chat__container">
+                        <h1>Chat</h1>
+                        <label for="msg"><b>Message</b></label>
+                        <textarea placeholder="Type Message" name="msg" required></textarea>
+
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn" onclick="closeForm()">Close</button>
+                    </form>
+                </div> -->
                 <nav class="header__navbar">
                     <div class="header__navbar-list">
-                        <a href="index.html" class="header__navbar-logo logo">
+                        <a href="" class="header__navbar-logo logo">
                             CASA 3
                         </a>
                     </div>
                     <ul class="header__navbar-list-menu">
                         <li class=" header__navbar-item ">
-                            <a href="index.html" class=" header__navbar-link" >HOME</a>
-                        </li>
-                        <li class="header__navbar-item index-page">
-                            <a href="activities.html" class="header__navbar-link">ACTIVITIES</a>
+                            <a href="index.html" class="active header__navbar-link" >HOME</a>
                         </li>
                         <li class="header__navbar-item">
+                            <a href="activities.html" class="header__navbar-link">ACTIVITIES</a>
+                        </li>
+                        <li class="header__navbar-item index-page">
                             <a href="dorm.html" class="header__navbar-link">DORM & ROOMS</a>
                         </li>
                         <li class="header__navbar-item">
@@ -72,12 +83,12 @@
                         </label>
                         <ul class="header__navbar-mobile-list menu">
                             <li class=" header__navbar-mobile-item ">
-                                <a href="index.html" class=" header__navbar-mobile-link" >HOME</a>
-                            </li>
-                            <li class="header__navbar-mobile-item index-page">
-                                <a href="activities.html" class="header__navbar-mobile-link">ACTIVITIES</a>
+                                <a href="index.html" class="active header__navbar-mobile-link" >HOME</a>
                             </li>
                             <li class="header__navbar-mobile-item">
+                                <a href="activities.html" class="header__navbar-mobile-link">ACTIVITIES</a>
+                            </li>
+                            <li class="header__navbar-mobile-item index-page">
                                 <a href="dorm.html" class="header__navbar-mobile-link">DORM & ROOMS</a>
                             </li>
                             <li class="header__navbar-mobile-item">
@@ -141,8 +152,9 @@
                 </nav>
             </div>
         </header>
+        <!-- activity -->
         
-
+        
             <!-- /activities container -->
             <!-- Footer -->
             <footer class="footer">
@@ -207,15 +219,16 @@
             var navbar = document.querySelector("header");
             var sticky = navbar.offsetTop;
             var a = window.pageYOffset;
-
+            console.log(a);
+            console.log(sticky);
             navbar.classList.toggle("sticky",window.scrollY>0)
                 // if (window.pageYOffset >= sticky) {
                 //     navbar.classList.add("sticky")
                 // } else {
                 //     navbar.classList.remove("sticky");
                 // }
-                
         })
     </script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
