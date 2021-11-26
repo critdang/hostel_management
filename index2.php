@@ -1,10 +1,15 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+    $action = $_GET['action'];
+    require_once('controllers/RoomController.php');
 
-    require_once('controllers/UserController.php');
-    $usercontroller = new UserController();
-    $usercontroller-> getUser();
+    $roomController = new RoomController();
+    // Điều hướng bằng truyền query paramater
+    if($action =='list') {
+        $roomController-> getRoom();
+    }
+    if($action =='add') {
+        $roomController-> addRoom();
+    }
+
 ?>
 
