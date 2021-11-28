@@ -22,6 +22,7 @@
 <body>
     <div class="app">
         <?php
+        require_once('models/DbModel.php');
         include('include/topbar.php');
         // slider
         if(isset($_GET['manage'])){
@@ -36,14 +37,14 @@
         }elseif($page=='activities') {
             include('include/activities.php');
         }elseif($page=='dorm') {
-            include('include/dorm.php');
+            include('controllers/DormController.php');
         }elseif($page=='detail') {
             include('include/detail.php');
         } 
         else{
             // home
             include('include/slider.php');
-            include('include/home.php');
+            include('controllers/RoomController.php');
         }
         // footer
         include('include/footer.php');
