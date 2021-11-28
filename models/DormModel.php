@@ -1,8 +1,6 @@
 <?php
-    // require_once('../models/DbModel.php');
-    class RoomModel 
-    {
-        public function getRoom()
+    class DormModel {
+        public function getDorm()
         {
             
             $con = new mysqli("localhost","root","","hostel");
@@ -14,22 +12,22 @@
         //    tạo ra các con trỏ
             $result = $con -> query("SELECT * FROM `tbl_room`");
 
-            $rooms = array();
+            $dorms = array();
 
             if($result->num_rows>0) {
-                // Trả về từng room
-                while($room = mysqli_fetch_array($result)) {
+                // Trả về từng dorm
+                while($dorm = mysqli_fetch_array($result)) {
                     // lưu ptu vào posts
-                    $rooms[] = $room;
+                    $dorms[] = $dorm;
                 }
             }
             // bước 5 trả về controller
-            return $rooms;
+            return $dorms;
         }
     }
-    // $rooms = (new RoomModel()) -> getRoom(); 
-    
-    // foreach($rooms as $room) {
-    //     print_r($room);
+    // Kiem tra
+    // $dorms = (new DormModel()) -> getDorm();
+    // foreach ($dorms as $dorm) {
+    //     print_r($dorm);
     // }
 ?>

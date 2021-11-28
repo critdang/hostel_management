@@ -4,4 +4,5 @@
             require_once('templates/Rooms.php');
         }
     }
+
 ?>

@@ -37,14 +37,14 @@
         }elseif($page=='activities') {
             include('include/activities.php');
         }elseif($page=='dorm') {
-            include('include/dorm.php');
+            include('controllers/DormController.php');
         }elseif($page=='detail') {
             include('include/detail.php');
         } 
         else{
             // home
             include('include/slider.php');
-            include('views/home.php');
+            include('controllers/RoomController.php');
         }
         // footer
         include('include/footer.php');
