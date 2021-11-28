@@ -408,6 +408,9 @@ body {
     padding: 10px;
     font-size: 13px;
 }
+.detail__item-book--title h3 {
+    text-decoration: line-through;
+}
 .detail__book-item{
     padding: 10px 15px;
     width: 100%;

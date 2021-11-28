@@ -23,6 +23,7 @@
     <div class="app">
         <?php
         require_once('models/DbModel.php');
+        require_once('models/SessionModel.php');
         include('include/topbar.php');
         // slider
         if(isset($_GET['manage'])){
@@ -39,7 +40,7 @@
         }elseif($page=='dorm') {
             include('controllers/DormController.php');
         }elseif($page=='detail') {
-            include('include/detail.php');
+            include('controllers/CartController.php');
         } 
         else{
             // home

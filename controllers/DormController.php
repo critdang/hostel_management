@@ -9,7 +9,6 @@
             require_once('views/DormView.php');
             $dormView = new DormView();
             $dormView -> showAllDorm($dorms);
-            print_r($dormView);
         }
     }
     $temp = (new DormController())->getDorm();

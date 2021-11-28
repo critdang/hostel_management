@@ -12,7 +12,7 @@
       }
       /* check if server is alive */
       if ($con->ping()) {
-        printf ("Our connection is ok!\n");
+        // printf ("Our connection is ok!\n");
       } else {
         printf ("Error: %s\n", $con->error);
       }

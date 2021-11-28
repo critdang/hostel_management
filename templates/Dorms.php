@@ -101,6 +101,12 @@
                                             More Info
                                         </a>
                                     </div>
+                                    <br>
+                                    <div class="dorm__container-item--btn">
+                                        <a href="?manage=detail&room=<?php echo $dorm['room_id'] ?>" class="btn-primary">
+                                            Book Room
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         <?php endforeach; ?>
