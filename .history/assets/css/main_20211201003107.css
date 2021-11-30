@@ -156,7 +156,6 @@ body {
     right: 11px;
     font-size: 1.6rem;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
     border: 2px sodlid #EE4D2D;
     color: #fff;
     background-color: var(--primary-color);
