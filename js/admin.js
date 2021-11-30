@@ -15,11 +15,11 @@ document.querySelectorAll('.sidebar-submenu').forEach(e => {
 })
 let category_options = {
     series: [44, 55, 41, 17],
-    labels: ['Cloths','Devices','Bags','Ưatches'],
+    labels: ['Cloths','Devices','Bags','Watches'],
     chart: {
         type: 'donut',
     },
-    color: ['#6ab04c','#2980b9','#f39c12','#d35400']
+    color: ['#6ab04c','#2980b9','#f39c12','#d35400'],
 //   responsive: [{
 //     breakpoint: 480,
 //     options: {
@@ -95,7 +95,7 @@ darkmode_toggle.onclick = (e) => {
     e.preventDefault();
     document.querySelector('body').classList.toggle('dark');
     darkmode_toggle.querySelector('.darkmode-switch').classList.toggle('active');
-    setDarkChart(document.querySelector('body').classList.contains('dark'))
+    setDarkChart(document.querySelector('body').classList.contains('dark'));
 }
 
 let overlay = document.querySelector('.overlay');

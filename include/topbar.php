@@ -33,7 +33,11 @@
                     <a href="?manage=about" class="header__navbar-link">ABOUT</a>
                 </li>
                 <li class=" header__navbar-item" id="about">
+
                     <a href="?manage=detail" class="header__navbar-link">CART</a>
+                </li>
+                <li class=" header__navbar-item" id="about">
+                  <a href="?manage=checkout" class="header__navbar-link">CHECKOUT</a>
                 </li>
                     <li class="header__navbar-item">
                         <a href="" class="header__navbar-icon-link">

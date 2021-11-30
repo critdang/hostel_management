@@ -41,6 +41,8 @@
             include('controllers/DormController.php');
         }elseif($page=='detail') {
             include('controllers/CartController.php');
+        }elseif($page=='checkout') {
+            include('include/checkout.php');
         } 
         else{
             // home
@@ -51,7 +53,8 @@
         include('include/footer.php');
         ?>
     </div>
-
+    
+    <!-- Navbar -->
     <script src="./js/slider.js"></script>
     <script type="text/javascript">
             window.addEventListener("scroll",function() { 
@@ -59,6 +62,36 @@
             var sticky = navbar.offsetTop;
             var a = window.pageYOffset;
             navbar.classList.toggle("sticky",window.scrollY>0)
+        })
+    </script>
+
+    <!-- Validator -->
+    <script src="./js/validator.js"></script>
+    <script>
+        //Truyền object vào function validator
+        Validator({
+            form:'#form-1',
+            formGroupSelector:'.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                //chạy hàm có đối số cho hàm 
+                Validator.isRequired('#fullname','Vui lòng nhập tên đầy đủ'),
+                Validator.isRequired('#email'),
+                Validator.isRequired('#avartar'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password',6),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isRequired('input[name="gender"]'),
+                Validator.isRequired('#province'),
+                Validator.isConfirmed('#password_confirmation', function() {
+                  return document.querySelector('#form-1 #password').value;
+                },'Mật khẩu nhập lại không chính xác')
+            ],
+
+            // data nhận được từ formValues của enableInputs 
+          onSubmit: function(data) {
+
+          }
         })
     </script>
 </body>

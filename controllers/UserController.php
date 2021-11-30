@@ -14,10 +14,10 @@
             }else {
                 $user = $this -> model -> getUser($_POST['username'],$_POST['password']);
                 if($user!==null) {
-                    header ('Location: ../admin.php'); 
+                    header ("Location: ../views/Admin.php"); 
                 }
                 else{
-                    header("Location: ../login.php");
+                    header ("Location: ../views/Login.php");
                 }
             }
         }

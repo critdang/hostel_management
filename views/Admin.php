@@ -12,22 +12,22 @@
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- APP CSS -->
-    <link rel="stylesheet" href="assets/css/grid_raw.css"> 
-    <link rel="stylesheet" href="assets/css/admin.css">
-    <link rel="stylesheet" href="assets/css/grid_admin.css">
+    <link rel="stylesheet" href="../assets/css/grid_raw.css"> 
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/grid_admin.css">
 </head>
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebar-logo">
-            <img src="./assets/img/images/logo-lg.png" alt="Company logo">
+            <img src="../assets/img/images/logo-lg.png" alt="Company logo">
             <div class="sidebar-close" id="sidebar-close">
                 <i class='bx bx-menu'></i>
             </div>
         </div>
         <div class="sidebar-user">
             <div class="sidebar-user-info">
-                <img src="./assets/img/images/logo-mb.png" alt="User picture" class="profile-image">
+                <img src="../assets/img/images/logo-mb.png" alt="User picture" class="profile-image">
                 <div class="slider-user-name">
                     Anh Huy
                 </div>
@@ -253,7 +253,7 @@
                             <ul class="product-list">
                                 <li class="product-list-item">
                                     <div class="item-info">
-                                        <img src="./assets/img/images/thumb-7.jpg" alt="product image">
+                                        <img src="../assets/img/images/thumb-7.jpg" alt="product image">
                                         <div class="item-name">
                                             <div class="product-name">
                                                 Jacket
@@ -270,7 +270,7 @@
                                 </li>
                                 <li class="product-list-item">
                                     <div class="item-info">
-                                        <img src="./assets/img/images/sneaker.jpg" alt="product image">
+                                        <img src="../assets/img/images/sneaker.jpg" alt="product image">
                                         <div class="item-name">
                                             <div class="product-name">
                                                 Sneaker
@@ -287,7 +287,7 @@
                                 </li>
                                 <li class="product-list-item">
                                     <div class="item-info">
-                                        <img src="./assets/img/images/headphone.jpg" alt="product image">
+                                        <img src="../assets/img/images/headphone.jpg" alt="product image">
                                         <div class="item-name">
                                             <div class="product-name">
                                                 Headphones
@@ -304,7 +304,7 @@
                                 </li>
                                 <li class="product-list-item">
                                     <div class="item-info">
-                                        <img src="assets/img/images/backpack.jpg" alt="product image">
+                                        <img src="../assets/img/images/backpack.jpg" alt="product image">
                                         <div class="item-name">
                                             <div class="product-name">
                                                 Backpack
@@ -368,7 +368,7 @@
                                         <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <img src="assets/img/images/user-image-2.png" alt="user 1 image">
+                                                <img src="../assets/img/images/user-image-2.png" alt="user 1 image">
                                                 <span> Quang Dai</span>
                                             </div>
                                         </td>
@@ -391,7 +391,7 @@
                                         <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <img src="assets/img/images/user-image-2.png" alt="user 1 image">
+                                                <img src="../assets/img/images/user-image-2.png" alt="user 1 image">
                                                 <span> Duc Chuong</span>
                                             </div>
                                         </td>
@@ -413,7 +413,7 @@
                                         <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <img src="assets/img/images/user-image-3.png" alt="user 1 image">
+                                                <img src="../assets/img/images/user-image-3.png" alt="user 1 image">
                                                 <span> Quang Huy</span>
                                             </div>
                                         </td>
@@ -449,6 +449,6 @@
     <!-- Apexchart -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- APP JS -->
-    <script src="js/admin.js"></script>
+    <script src="../js/admin.js"></script>
 </body>
 </html>
