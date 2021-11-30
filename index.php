@@ -25,6 +25,7 @@
         require_once('models/DbModel.php');
         require_once('models/SessionModel.php');
         include('include/topbar.php');
+        include('include/sticky_button.php');
         // slider
         if(isset($_GET['manage'])){
             $page = $_GET['manage'];
@@ -53,7 +54,6 @@
         include('include/footer.php');
         ?>
     </div>
-    
     <!-- Navbar -->
     <script src="./js/slider.js"></script>
     <script type="text/javascript">
