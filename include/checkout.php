@@ -36,9 +36,9 @@
                     <input id="avartar" name="avartar"  type="file" class="form-control">
                     <span class="form-message"></span>
                 </div> -->
-                <div class="form-group">
+                <div class="form-group  ">
                     <label for="nation" class="form-label">Phone number</label>
-                    <div class="form-group__phone">
+                    <div class="form-group horizontal">
                         <div class="form-group__countrycode">
                                 <p>Coutry code</p>
                                 <input id="country_code" name="country_code" type="text" placeholder="VD: +84" class="form-control">
@@ -106,9 +106,12 @@
                 <div class="checkout-item__info">
                     <p>1 adult</p>
                 </div>
-                <div class="checkout-item__info">
+                <div class="checkout-item__info checkout-item__detail">
                     <h4>See the room 1 details</h4>
                     <i class="fas fa-chevron-down"></i>
+                    <div class="checkout-item__dropdown">
+                        
+                    </div>
                 </div>
             </div>
             <div class="checkout-item">

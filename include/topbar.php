@@ -12,13 +12,13 @@
                 
             ?> 
             <div class="header__navbar-list">
-                <a href="" class="header__navbar-logo logo" >
+                <a href="?" class="header__navbar-logo logo" >
                     CASA 3
                 </a>
             </div>
             <ul class="header__navbar-list-menu">
                 <li class="home  header__navbar-item ">
-                    <a href="" class=" header__navbar-link" style="color:red" >HOME</a>
+                    <a href="?" class=" header__navbar-link" style="color:red" >HOME</a>
                 </li>
                 <li class="activities header__navbar-item">
                     <a href="?manage=activities" class="header__navbar-link">ACTIVITIES</a>
@@ -36,20 +36,21 @@
 
                     <a href="?manage=detail" class="header__navbar-link">CART</a>
                 </li>
+
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar-icon-link header__navbar-icon-fb">
+                        <i class="header__navbar-icon fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar-icon-link header__navbar-icon-insta">
+                        <i class="header__navbar-icon fab fa-instagram"></i>
+                    </a>
+
                 <li class=" header__navbar-item" id="about">
                   <a href="?manage=checkout" class="header__navbar-link">CHECKOUT</a>
+
                 </li>
-                    <li class="header__navbar-item">
-                        <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-facebook-f"></i>
-                        
-                        </a>
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-instagram"></i>
-                        </a>
-                    </li>
             </ul>
             
             <!-- kéo navbar vào -->
@@ -71,27 +72,36 @@
                     <i class="fas fa-times"></i>
                 </label>
                 <ul class="header__navbar-mobile-list menu">
+                    <li class=" header__navbar-mobile-item">
+                        <a href="?" class="header__navbar-logo logo" >
+                        CASA 3
+                        </a>
+                    </li>
                     <li class=" header__navbar-mobile-item index-page">
-                        <a href="" class=" header__navbar-mobile-link" >HOME</a>
+                        <a href="?" class=" header__navbar-mobile-link" >HOME</a>
                     </li>
                     <li class="header__navbar-mobile-item">
-                        <a href="activities.html" class="header__navbar-mobile-link">ACTIVITIES</a>
+                        <a href="?manage=activities" class="header__navbar-mobile-link">ACTIVITIES</a>
                     </li>
                     <li class="header__navbar-mobile-item">
-                        <a href="dorm.html" class="header__navbar-mobile-link">DORM & ROOMS</a>
+                        <a href="?manage=dorm" class="header__navbar-mobile-link">DORM & ROOMS</a>
                     </li>
                     <li class="header__navbar-mobile-item">
-                        <a href="location.html" class="header__navbar-mobile-link">LOCATION</a>
+                        <a href="?manage=location" class="header__navbar-mobile-link">LOCATION</a>
                     </li>
                     <li class="header__navbar-mobile-item">
-                        <a href="about.html" class="header__navbar-mobile-link">ABOUT</a>
+                        <a href="?manage=about" class="header__navbar-mobile-link">ABOUT</a>
                     </li>
                     
                     <li class="header__navbar-mobile-item">
-                        <a href="" class="header__navbar-mobile-link">
-                            <i class="header__navbar-icon fab fa-facebook-f"></i>
-                            <i class="header__navbar-icon fab fa-instagram"></i>
-                        </a>
+                        <div class="header__navbar-mobile-link">
+                            <a href="" class="header__navbar-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon ">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </li>
                     <!-- <li class="header__navbar-mobile-item">
                         <a href="" class="header__navbar-mobile-link">
