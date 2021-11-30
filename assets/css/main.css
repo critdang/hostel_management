@@ -480,4 +480,124 @@ body {
 .about__comments{
     background-color: seashell;
 }
-/* responsive */
+/* checkout */
+.checkout-container--info {
+    
+}
+.checkout-item label {
+    font-size: 20px;
+}
+
+.form{
+    padding: 0 120px;
+}
+
+.form .heading {
+    font-size: 2rem;
+}
+.heading {
+    text-align: center;
+}
+  .form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  .form-group.horizontal{
+    flex-direction: row;
+  }
+  .form-label,
+  .form-message {
+    text-align: left;
+  }
+  
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+  .form-group__phone{
+    display: flex;
+  }
+  .form-policy {
+    font-size: 17px;
+    padding: 20px 0;
+  }
+  .form-group__countrycode p {
+      font-size: 12px;
+  }
+  .form_btn {
+    display: flex;
+    justify-content: center;
+  }
+/* Checkout */
+.checkout_date {
+    display: flex;
+    align-items: center;
+}
+.checkout_date i {
+    padding: 0 10px;
+}
+.checkout-item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-item h3{
+    text-transform: uppercase;
+}
+
+.checkout-item {
+    border: 0.5px solid #dadadd;
+    padding: 0 10px;
+    border-radius: 3px;
+    
+}
+
+.checkout-item p {
+    font-size: 11px;
+}
+
+.checkout-item h4 {
+    text-transform: uppercase;
+    font-size: 13px;
+
+}

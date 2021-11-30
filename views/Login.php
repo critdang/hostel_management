@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,25 +16,27 @@
             <div class="col align-item-center flex-col sign-up">
                 <div class="form-wrapper align-item-center">
                     <div class="form sign-up">
-                        <div class="input-group">
-                            <i class='bx bxs-user'></i>
-                            <input type="text" placeholder="Username">
-                        </div>
-                        <div class="input-group">
-                            <i class='bx bx-mail-send'></i>
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="input-group">
-                            <i class='bx bxs-lock-alt' ></i>
-                            <input type="password" placeholder="Password">
-                        </div>
-                        <div class="input-group">
-                            <i class='bx bxs-lock-alt' ></i>
-                            <input type="password" placeholder="Confirm Password">
-                        </div>
-                        <button>
-                            <a href="">Sign up</a>
-                        </button>
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <i class='bx bxs-user'></i>
+                                <input type="text" placeholder="Username">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bx-mail-send'></i>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt' ></i>
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt' ></i>
+                                <input type="password" placeholder="Confirm Password">
+                            </div>
+                            <div class="input-btn">
+                                <input type="submit" class="input-group" name="logout_home" value="Sign up">
+                            </div>
+                        </form>
                         <p>
                             <span>
                                 Already have an account?
@@ -66,18 +68,18 @@
             <!-- sign in -->
             <div class="col align-item-center flex-col sign-in" >
                 <div class="form-wrapper align-item-center">
-                    <div class="form sign-in">
+                    <form action="../controllers/UserController.php" method= "POST" class="form sign-in">
                         <div class="input-group">
                             <i class='bx bxs-user'></i>
-                            <input type="text" placeholder="Username">
+                            <input type="text" name="username" placeholder="Username">
                         </div>
                         <div class="input-group">
                             <i class='bx bxs-lock-alt' ></i>
-                            <input type="password" placeholder="Password">
+                            <input type="password" name="password" placeholder="Password">
                         </div>
-                        <button>
-                            <a href="/admin.html">Sign in</a>
-                        </button>
+                        <div class="input-btn">
+                            <input type="submit" class="input-group" name="login_home" value="Log in">
+                        </div>
                         <p>
                             <b>
                                 Forgot your password?
@@ -91,7 +93,7 @@
                                 Sign up here
                             </b>
                         </p>
-                    </div>
+                    </form>
                 </div>
                 <div class="form-wrapper">
                     <div class="social-list align-item-center sign-in">
@@ -126,7 +128,7 @@
                     </p>
                 </div>
                 <div class="img sign-in">
-                    <img src="assets/img/undraw_online_payments_re_y8f2.svg" alt="welcome">
+                    <img src="../assets/img/undraw_online_payments_re_y8f2.svg" alt="welcome">
                 </div>
             </div>
             <!-- END Sign up content -->
@@ -144,7 +146,7 @@
                     </p>
                 </div>
                 <div class="img sign-up">
-                    <img src="assets/img/undraw_co-working_re_w93t (1).svg" alt="welcome">
+                    <img src="../assets/img/undraw_co-working_re_w93t (1).svg" alt="welcome">
                 </div>
             </div>
             
@@ -153,6 +155,6 @@
         </div>
         <!-- end Content section -->
     </div>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
