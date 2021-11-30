@@ -13,7 +13,7 @@
         public function getUser($username, $password)
         {
             $con = parent::connect();
-            $sql = mysqli_query($con,"SELECT * FROM `user` WHERE username = '$username' and password = '$password' ");
+            $sql = mysqli_query($con,"SELECT * FROM tbl_user WHERE username = '$username' and password = '$password' ");
             $ten = mysqli_fetch_array($sql);
             return $ten;
         }
