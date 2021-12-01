@@ -46,11 +46,6 @@
                     <a href="" class="header__navbar-icon-link header__navbar-icon-insta">
                         <i class="header__navbar-icon fab fa-instagram"></i>
                     </a>
-
-                <li class=" header__navbar-item" id="about">
-                  <a href="?manage=checkout" class="header__navbar-link">CHECKOUT</a>
-
-                </li>
             </ul>
             
             <!-- kéo navbar vào -->
