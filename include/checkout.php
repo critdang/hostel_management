@@ -99,51 +99,104 @@
                     <p>3 adults</p>
             </div>
             <div class="checkout-item">
-                <div class="checkout-item__info">
+                <div class="checkout-item__info checkout-item__title">
                     <h3>room1</h3>
                     <p>254,81$</p>
                 </div>
                 <div class="checkout-item__info">
                     <p>1 adult</p>
                 </div>
-                <div class="checkout-item__info checkout-item__detail">
-                    <h4>See the room 1 details</h4>
-                    <i class="fas fa-chevron-down"></i>
-                    <div class="checkout-item__dropdown">
-                        
+                <div class="checkout-item__detail">
+                    <button class="dropbtn">
+                        <h5>SEE THE ROOM 1 DETAILS</h5>  
+                        <i onclick="myFunction(this)" class="fas fa-chevron-down"></i>
+                    </button>
+                    <!-- <button onclick="myFunction()" class="dropbtn" data-index="num2"> -->
+                    
+                    <div id="checkout-dropdown" class="dropdown-content">
+                        <h2 >ROOM</h2>
+                        <p >OPERA WING, PREMIUM ROOM, QUEEN BED</p>
+                        <div class="checkout-seperate">
+                            <p>ASIA -BOOK WITH CONFIDENCE</p>
+                            <p>226,80 $US$</p>
+                        </div>
+                        <a href="">Pricing condition</a>
+                        <h2>TAXES AND FEES</h2>
+                        <div class="checkout-seperate">
+                            <p>VAT</p>
+                            <p>28,01 $US</p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
             <div class="checkout-item">
-                <div class="checkout-item__info">
+                <div class="checkout-item__info checkout-item__title">
                     <h3>room2</h3>
                     <p>254,81$</p>
                 </div>
                 <div class="checkout-item__info">
                     <p>1 adult</p>
                 </div>
-                <div class="checkout-item__info">
-                    <h4>See the room 1 details</h4>
-                    <i class="fas fa-chevron-down"></i>
+                <div class="checkout-item__detail">
+                    <button class="dropbtn">
+                        <h5>SEE THE ROOM 1 DETAILS</h5>  
+                        <i onclick="myFunction(this)" class="fas fa-chevron-down"></i>
+                    </button>
+                    <!-- <button onclick="myFunction()" class="dropbtn" data-index="num2"> -->
+                    
+                    <div id="checkout-dropdown" class="dropdown-content">
+                        <h2 >ROOM</h2>
+                        <p >OPERA WING, PREMIUM ROOM, QUEEN BED</p>
+                        <div class="checkout-seperate">
+                            <p>ASIA -BOOK WITH CONFIDENCE</p>
+                            <p>226,80 $US$</p>
+                        </div>
+                        <a href="">Pricing condition</a>
+                        <h2>TAXES AND FEES</h2>
+                        <div class="checkout-seperate">
+                            <p>VAT</p>
+                            <p>28,01 $US</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="checkout-item">
-                <div class="checkout-item__info">
+                <div class="checkout-item__info checkout-item__title">
                     <h3>room3</h3>
                     <p>254,81$</p>
                 </div>
                 <div class="checkout-item__info">
                     <p>1 adult</p>
                 </div>
-                <div class="checkout-item__info">
-                    <h4>See the room 1 details</h4>
-                    <i class="fas fa-chevron-down"></i>
+                <div class="checkout-item__detail">
+                    <button class="dropbtn">
+                        <h5>SEE THE ROOM 1 DETAILS</h5>  
+                        <i onclick="myFunction(this)" class="fas fa-chevron-down"></i>
+                    </button>
+                    <!-- <button onclick="myFunction()" class="dropbtn" data-index="num2"> -->
+                    
+                    <div id="checkout-dropdown" class="dropdown-content">
+                        <h2 >ROOM</h2>
+                        <p >OPERA WING, PREMIUM ROOM, QUEEN BED</p>
+                        <div class="checkout-seperate">
+                            <p>ASIA -BOOK WITH CONFIDENCE</p>
+                            <p>226,80 $US$</p>
+                        </div>
+                        <a href="">Pricing condition</a>
+                        <h2>TAXES AND FEES</h2>
+                        <div class="checkout-seperate">
+                            <p>VAT</p>
+                            <p>28,01 $US</p>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
             <div class="checkout-item">
                 <h2>TOTAL(fees and taxes included)</h2>
                 <div class="checkout-item__info">
-                    <h2>Room 3/3</h2>
+                    <p>Room 3/3</p>
                     <p>764,43 $</p>
                 </div>
             </div>

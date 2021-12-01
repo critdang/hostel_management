@@ -65,6 +65,60 @@
         })
     </script>
 
+    <!-- dropdown -->
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    // function myFunction() {
+    //     document.getElementById('checkout-dropdown').classList.toggle("show");
+    // }
+    // window.addEventListener("click",function() {
+    //     var c = document.getElementsByClassName('dropbtn');
+    //     for(var i=0; i<c.length; i++) {
+    //     var a = document.getElementsByClassName('dropbtn')[i].dataset.index
+    //     console.log(a);
+    //     }
+    // })
+    // Close the dropdown if the user clicks outside of it
+    // window.onclick = function(event) {
+    // if (!event.target.matches('.dropbtn, .fas')) {
+    //     var dropdowns = document.getElementsByClassName("dropdown-content");
+    //     console.log(dropdowns);
+    //     var i;
+    //     for (i = 0; i < dropdowns.length; i++) {
+    //     var openDropdown = dropdowns[i];
+    //     var b = document.getElementsByClassName("dropdown-content")[i].dataset.index;
+    //     console.log(b);
+    //     if (openDropdown.classList.contains('show')) {
+    //         openDropdown.classList.remove('show');
+    //     }
+    //     }
+    // }
+    // }
+    
+        function myFunction(x) {
+            console.log(x);
+            x.classList.toggle("fa-chevron-up");
+        }
+        var acc = document.getElementsByClassName("dropbtn");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                if(this.classList.toggle("active")) {
+                    x.classList.toggle("fa-chevron-up");
+                }
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
     <!-- Validator -->
     <script src="./js/validator.js"></script>
     <script>
@@ -90,7 +144,6 @@
 
             // data nhận được từ formValues của enableInputs 
           onSubmit: function(data) {
-
           }
         })
     </script>
