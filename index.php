@@ -64,6 +64,7 @@
             var navbar = document.querySelector("header");
             var sticky = navbar.offsetTop;
             var a = window.pageYOffset;
+            console.log(window.scrollY);
             navbar.classList.toggle("sticky",window.scrollY>0)
         })
     </script>

@@ -1,3 +1,4 @@
+<!-- Sticky button -->
 <div class="sticky_btn">
     <a href="?manage=checkout">
         <i class="fas fa-shopping-cart"></i>
