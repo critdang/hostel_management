@@ -89,17 +89,7 @@
                     <h3>CASA 3</h3>
                 </div>
             </div>
-            <div class="checkout-item">
-                <div class="checkout-item__info">
-                    <div class="checkout_date checkout_divide">
-                        <h3>December 2,2021</h3>
-                        <i class="fas fa-arrow-right"></i>
-                        <h3>December 4,2021</h3>
-                    </div>
-                        <p>2 nights</p>
-                        <p>3 adults</p>
-                </div>
-            </div>
+           
             <!-- Room -->
             <?php foreach ($rooms as $room) {
             ?>
@@ -109,7 +99,11 @@
                         <h3><?php echo $room['room_name'] ?></h3>
                         <p><?php echo number_format($room['total'])." VND" ?></p>
                     </div>
-                    <p>1 adult</p>
+                    <div class="checkout_date checkout_divide">
+                        <p><?php echo $room['check_in_day'] ?></p>
+                        <i class="fas fa-arrow-right"></i>
+                        <p><?php echo $room['check_out_day'] ?></p>
+                    </div>
                 </div>
                 <div class="checkout-item__detail">
                     <button class="dropbtn">
@@ -159,8 +153,8 @@
                 <div class="checkout-item__info">
                     <h2>TOTAL(fees and taxes included)</h2>
                     <div class="checkout-item__divide">
-                        <h3>Room 3/3</h3>
-                        <p>764,43 $</p>
+                        <h3><?php echo Count($rooms)." Rooms" ?></h3>
+                        <p><?php echo number_format($total)." VND" ?></p>
                     </div>
                 </div>
             </div>

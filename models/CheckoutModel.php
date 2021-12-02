@@ -10,7 +10,7 @@
                 echo "Failed to connect to MySQL: " . $con -> connect_error;
             }
         //    tạo ra các con trỏ
-            $result = $con -> query("SELECT *,ABS(DATEDIFF(checkin,checkout)*room_price*(1+adults*0.2+children*0.1)) AS price, (SELECT price) *0.1 AS tax, (SELECT price)+(SELECT tax) AS total  FROM tbl_cart,tbl_room WHERE  user_id='0' AND tbl_cart.room_id=tbl_room.room_id");
+            $result = $con -> query("SELECT *,ABS(DATEDIFF(checkin,checkout)*room_price*(1+adults*0.2+children*0.1)) AS price, (SELECT price) *0.1 AS tax, (SELECT price)+(SELECT tax) AS total, CONCAT(MONTHNAME(checkin),' ',DAY(checkin),',',YEAR(checkin)) AS check_in_day, CONCAT(MONTHNAME(checkout),' ',DAY(checkout),',',YEAR(checkout)) AS check_out_day FROM tbl_cart,tbl_room WHERE  user_id='0' AND tbl_cart.room_id=tbl_room.room_id");
 
             $rooms = array();
 
@@ -23,6 +23,14 @@
             }
             // bước 5 trả về controller
             return $rooms;
+        }
+        public function getTotal($rooms)
+        {
+          $total=0;
+          foreach ($rooms as $room) {
+            $total+=$room['total'];
+          }
+          return $total;
         }
     }
     // Kiem tra
