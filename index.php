@@ -32,7 +32,7 @@
             $page ='';
         }
         if($page!='checkout'){
-          include('include/sticky_button.php');
+            include('include/sticky_button.php');
         }
         if($page=='about') {
             include('include/about.php');
