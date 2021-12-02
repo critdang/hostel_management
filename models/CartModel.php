@@ -33,7 +33,7 @@ class CartModel extends DbModel
       $con = parent::connect();
       $carts = $con->query("UPDATE tbl_cart SET  checkin='$checkin',checkout='$checkout',rooms='$rooms',adults='$adults',children='$children' WHERE cart_id='$cart_id'");
       // header('Location:index.php');
-      echo("<script>location.href = '?manage=activities';</script>");
+      echo("<script>location.href = '?manage=checkout';</script>");
     }
   }
 }
