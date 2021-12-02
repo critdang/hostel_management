@@ -273,6 +273,7 @@ body{
     display: block;
 }
 
+
 .header__nav-input:checked ~ .header__navbar-mobile{
     transform: translateX(0%);
     opacity: 1;
