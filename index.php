@@ -25,12 +25,14 @@
         require_once('models/DbModel.php');
         require_once('models/SessionModel.php');
         include('include/topbar.php');
-        include('include/sticky_button.php');
         // slider
         if(isset($_GET['manage'])){
             $page = $_GET['manage'];
         }else{
             $page ='';
+        }
+        if($page!='checkout'){
+          include('include/sticky_button.php');
         }
         if($page=='about') {
             include('include/about.php');
@@ -43,13 +45,14 @@
         }elseif($page=='detail') {
             include('controllers/CartController.php');
         }elseif($page=='checkout') {
-            include('include/checkout.php');
+            include('controllers/CheckoutController.php');
         } 
         else{
             // home
             include('include/slider.php');
             include('controllers/RoomController.php');
         }
+        
         // footer
         include('include/footer.php');
         ?>
