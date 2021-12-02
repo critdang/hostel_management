@@ -6,7 +6,7 @@
                             <div class="about__container">
                                 <div class="about__container-item">
                                     <h1 class="about__title">
-                                        activities
+                                        dorm & rooms
                                     </h1>
                                 </div>
                                 <div class="about__container-item">
