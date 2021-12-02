@@ -36,9 +36,8 @@
                     <input id="avartar" name="avartar"  type="file" class="form-control">
                     <span class="form-message"></span>
                 </div> -->
-                <div class="form-group  ">
+                <div class="form-group">
                     <label for="nation" class="form-label">Phone number</label>
-                    <div class="form-group horizontal">
                         <div class="form-group__countrycode">
                                 <p>Coutry code</p>
                                 <input id="country_code" name="country_code" type="text" placeholder="VD: +84" class="form-control">
@@ -47,7 +46,6 @@
                                 <p>Phone number</p>
                                 <input id="phone_code" name="phone_code" type="text" placeholder="VD: 945246026" class="form-control">
                         </div>
-                    </div>
                 </div>
                 <div class="form-group">
                     <label for="province" class="form-label">City</label>
@@ -86,56 +84,28 @@
             <!-- checkout -->
         <div class="checkout-container col c-12 m-12 l-4">
             <div class="checkout-item">
-                <h1>Your Stay</h1>
-                <h3>CASA 3</h3>
+                <div class="checkout-item__title">
+                    <h1>Your Stay</h1>
+                    <h3>CASA 3</h3>
+                </div>
             </div>
             <div class="checkout-item">
-                <div class="checkout_date checkout_title">
-                    <h3>December 2,2021</h3>
-                    <i class="fas fa-arrow-right"></i>
-                    <h3>December 4,2021</h3>
-                </div>
-                    <p>2 nights</p>
-                    <p>3 adults</p>
-            </div>
-            <div class="checkout-item">
-                <div class="checkout-item__info checkout-item__title">
-                    <h3>room1</h3>
-                    <p>254,81$</p>
-                </div>
                 <div class="checkout-item__info">
-                    <p>1 adult</p>
-                </div>
-                <div class="checkout-item__detail">
-                    <button class="dropbtn">
-                        <h5>SEE THE ROOM 1 DETAILS</h5>  
-                        <i onclick="myFunction(this)" class="fas fa-chevron-down"></i>
-                    </button>
-                    <!-- <button onclick="myFunction()" class="dropbtn" data-index="num2"> -->
-                    
-                    <div id="checkout-dropdown" class="dropdown-content">
-                        <h2 >ROOM</h2>
-                        <p >OPERA WING, PREMIUM ROOM, QUEEN BED</p>
-                        <div class="checkout-seperate">
-                            <p>ASIA -BOOK WITH CONFIDENCE</p>
-                            <p>226,80 $US$</p>
-                        </div>
-                        <a href="">Pricing condition</a>
-                        <h2>TAXES AND FEES</h2>
-                        <div class="checkout-seperate">
-                            <p>VAT</p>
-                            <p>28,01 $US</p>
-                        </div>
+                    <div class="checkout_date checkout_divide">
+                        <h3>December 2,2021</h3>
+                        <i class="fas fa-arrow-right"></i>
+                        <h3>December 4,2021</h3>
                     </div>
+                        <p>2 nights</p>
+                        <p>3 adults</p>
                 </div>
-                
             </div>
             <div class="checkout-item">
-                <div class="checkout-item__info checkout-item__title">
-                    <h3>room2</h3>
-                    <p>254,81$</p>
-                </div>
                 <div class="checkout-item__info">
+                    <div class="checkout-item__divide">
+                        <h3>room1</h3>
+                        <p>254,81$</p>
+                    </div>
                     <p>1 adult</p>
                 </div>
                 <div class="checkout-item__detail">
@@ -162,12 +132,12 @@
                 </div>
             </div>
             <div class="checkout-item">
-                <div class="checkout-item__info checkout-item__title">
-                    <h3>room3</h3>
-                    <p>254,81$</p>
-                </div>
                 <div class="checkout-item__info">
-                    <p>1 adult</p>
+                    <div class="checkout-item__divide">
+                        <h3>room2</h3>
+                        <p>254,81$</p>
+                    </div>
+                        <p>1 adult</p>
                 </div>
                 <div class="checkout-item__detail">
                     <button class="dropbtn">
@@ -191,14 +161,62 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="checkout-item">
-                <h2>TOTAL(fees and taxes included)</h2>
                 <div class="checkout-item__info">
-                    <p>Room 3/3</p>
+                    <div class="checkout-item__divide">
+                        <h3>room3</h3>
+                        <p>254,81$</p>
+                    </div>
+                        <p>1 adult</p>
+                </div>
+                <div class="checkout-item__detail">
+                    <button class="dropbtn">
+                        <h5>SEE THE ROOM 1 DETAILS</h5>  
+                        <i onclick="myFunction(this)" class="fas fa-chevron-down"></i>
+                    </button>
+                    <!-- <button onclick="myFunction()" class="dropbtn" data-index="num2"> -->
+                    
+                    <div id="checkout-dropdown" class="dropdown-content">
+                        <h2 >ROOM</h2>
+                        <p >OPERA WING, PREMIUM ROOM, QUEEN BED</p>
+                        <div class="checkout-seperate">
+                            <p>ASIA -BOOK WITH CONFIDENCE</p>
+                            <p>226,80 $US$</p>
+                        </div>
+                        <a href="">Pricing condition</a>
+                        <h2>TAXES AND FEES</h2>
+                        <div class="checkout-seperate">
+                            <p>VAT</p>
+                            <p>28,01 $US</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-item">
+                <div class="checkout-item__info">
+                    <h2>TOTAL(fees and taxes included)</h2>
+                    <div class="checkout-item__divide">
+                        <h3>Room 3/3</h3>
+                        <p>764,43 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-mobile sticky-checkout__mobile">
+            <div class="checkout-item__info">
+                <div class="checkout-item__divide">
+                    <h2>TOTAL(fees and taxes included)</h2>
+                    <label>Open</label>
+                </div>
+
+                <div class="checkout-item__divide">
+                    <h3>Room 3/3</h3>
                     <p>764,43 $</p>
                 </div>
+            </div>
+            <div class="form_btn-mobile">
+                    <input type="submit" class="form-submit btn-primary" value="Book">
             </div>
         </div>
     </div>

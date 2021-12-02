@@ -259,11 +259,11 @@ body{
     /* tỉ lệ màn hình */
     position: fixed;
     /* phủ kín màn hình */
-    
     top:0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
     animation: fadeIn linear 0.2s;
@@ -298,6 +298,7 @@ body{
     transform: translateX(-100%);
     opacity: 0;
     transition: all linear 0.2s;
+    z-index: 1;
 }
 .header__navbar-mobile-list{
     margin-top: 24px;
@@ -492,3 +493,106 @@ body{
     }
 }
 
+/* Responsive checkout */
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .form {
+        padding: 0 25px;
+    }
+    .checkout-container {
+        display: none;
+    }
+    .form_btn {
+        display: none;
+    }
+    .sticky_btn {
+        display: none;
+    }
+    .btn-primary{
+        padding: 0 108px;
+        border-radius: 20px;
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+    .form {
+        padding: 0 60px;
+    }
+    .checkout-container {
+        display: none;
+    }
+    .sticky_btn {
+        display: none;
+    }
+    .form_btn {
+        display: none;
+    }
+    .checkout-mobile {
+        display: block;
+    }
+    .btn-primary{
+        padding: 0 108px;
+        border-radius: 20px;
+    }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    .form {
+        padding: 0 60px;
+    }
+    .checkout-container {
+        display: none;
+    }
+    .form_btn {
+        display: none;
+    }
+    .sticky_btn {
+        display: none;
+    }
+    .checkout-mobile {
+        display: block;
+    }
+    .btn-primary{
+        padding: 0 108px;
+        border-radius: 20px;
+    }
+}
+
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    .form {
+        padding: 0 85px;
+    }
+    .form_btn {
+        display: flex;
+    }
+    .sticky_btn {
+        display: flex;
+    }
+    .checkout-mobile {
+        display: none;
+    }
+    .btn-primary{
+        padding: 0 30px;
+        border-radius: 2px;
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    .form {
+        padding: 0 120px;
+    }
+    .form_btn {
+        display: flex;
+    }
+    .sticky_btn {
+        display: flex;
+    }
+    .checkout-mobile {
+        display: none;
+    }
+    .btn-primary{
+        padding: 0 30px;
+        border-radius: 2px;
+    }
+}

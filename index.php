@@ -25,12 +25,15 @@
         require_once('models/DbModel.php');
         require_once('models/SessionModel.php');
         include('include/topbar.php');
-        include('include/sticky_button.php');
+        
         // slider
         if(isset($_GET['manage'])){
             $page = $_GET['manage'];
         }else{
             $page ='';
+        }
+        if($page!='checkout'){
+            include('include/sticky_button.php');
         }
         if($page=='about') {
             include('include/about.php');
@@ -61,6 +64,7 @@
             var navbar = document.querySelector("header");
             var sticky = navbar.offsetTop;
             var a = window.pageYOffset;
+            console.log(window.scrollY);
             navbar.classList.toggle("sticky",window.scrollY>0)
         })
     </script>
