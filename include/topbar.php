@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header sticky">
     <div class="grid">
         <nav class="header__navbar">
             <style>
