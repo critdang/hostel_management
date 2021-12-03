@@ -165,15 +165,31 @@
                 </div>
             </div>
         </div>
-        <input type="checkbox" name="" class="header__nav-input" id="header__nav-mobile-input">
-        <label for="header__nav-mobile-input" class="header__nav-overlay"></label>
+        <!-- <input type="checkbox" name class="checkout-input" id="checkout-mobile-input">
+        <label for="checkout-mobile-input" class="header__nav-overlay"></label>
+        <nav class="checkout-mobile__order">
+            <h1>he</h1>
+            <ul class="checkout-menu">
+                <li class=" header__navbar-mobile-item">
+                    <div class="checkout-item__divide">
+                        <h1>Your Stay</h1>
+
+                    <label for="checkout-mobile-input" class="checkout-mobile__order-close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                    </div>
+                </li>
+            </ul>
+        </nav> -->
         <div class="checkout-mobile sticky-checkout__mobile">
             <div class="checkout-item__info">
                 <div class="checkout-item__divide">
                     <h2>TOTAL(fees and taxes included)</h2>
-                    <label for="header__nav-mobile-input">
-                        button
-                    </label>
+                    <!-- <input type="checkbox" id="check">
+                    <label for="checkout-mobile-input">
+                        Detail
+                    </label> -->
+                    <button class="modal-btn">detail</button>
                 </div>
 
                 <div class="checkout-item__divide">
@@ -182,7 +198,30 @@
                 </div>
             </div>
             <div class="form_btn-mobile">
-                    <input type="submit" class="form-submit btn-primary" value="Book">
+                <input type="submit" class="form-submit btn-primary" value="Book">
+            </div>
+        </div>
+        <!-- modal-bg to animation-->
+        <div class="checkout-mobile__modal-bg">
+            <div class="checkout-mobile__modal">
+                <!-- box see on the screen -->
+                <div class="checkout-item__divide">
+                        <h1>Your Stay</h1>
+                <button class="checkout-mobile__order-close modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                </div>
+                <div class="checkout-item">
+                    <div class="checkout-item__info">
+                        <div class="checkout_date checkout_divide">
+                        <h3>December 2,2021</h3>
+                        <i class="fas fa-arrow-right"></i>
+                        <h3>December 4,2021</h3>
+                        </div>
+                        <p>2 nights</p>
+                        <p>3 adults</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

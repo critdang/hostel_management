@@ -757,3 +757,70 @@ body {
 .show {
     display: block;
 }
+
+/* checkout mobile */
+
+/* .checkout-input:checked ~ .header__nav-overlay {
+    display: block;
+}
+
+
+.checkout-mobile__order {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    opacity: 0;
+    background-color: #fff;
+    transition: all linear 0.2s;
+    z-index: 1;
+    transform: translateX(-400px);
+}
+
+.checkout-input:checked .checkout-mobile__order {
+    transform: translateX(0%);
+    opacity: 1;
+} */
+
+.checkout-mobile__modal-bg {
+    position: fixed;
+    width: 100%;
+    /* avoid click outside accidently */
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 1;
+}
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.checkout-mobile__modal {
+    position: relative;
+    background-color: #fff;
+    /* width: 30%; */
+    /* height: 60%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-close {
+    /* position: absolute; */
+    /* top: 4%;
+    right: 6%; */
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
