@@ -98,7 +98,7 @@
                                         <input type = "number" min = "0" value = "0" name = "children">
                                     </div>
                                     <div class="detail__item-book--title">
-                                    <h1><?php echo '$'.number_format($room['room_sale']) ?></h1>
+                                    <h1><?php echo '$'.number_format($room['room_price']) ?></h1>
                                     <p>Per Night</p>
                                     <p></p>
                                     <h1><?php echo '$'.number_format($room['room_sale']) ?></h1>

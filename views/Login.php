@@ -68,7 +68,7 @@
             <!-- sign in -->
             <div class="col align-item-center flex-col sign-in" >
                 <div class="form-wrapper align-item-center">
-                    <form action="../controllers/UserController.php" method= "POST" class="form sign-in">
+                    <form action="../controllers/admin/UserController.php" method= "POST" class="form sign-in">
                         <div class="input-group">
                             <i class='bx bxs-user'></i>
                             <input type="text" name="username" placeholder="Username">

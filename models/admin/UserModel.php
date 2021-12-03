@@ -1,6 +1,6 @@
 <?php
     
-    require_once('../models/DbModel.php');
+    require_once('../../models/DbModel.php');
     class UserModel extends DbModel 
     {
         // public function login($username, $password)

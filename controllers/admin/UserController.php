@@ -1,5 +1,5 @@
 <?php
-    require_once('../models/UserModel.php');
+    require_once('../../models/admin/UserModel.php');
     class UserController
     {
         public $model;
@@ -14,10 +14,10 @@
             }else {
                 $user = $this -> model -> getUser($_POST['username'],$_POST['password']);
                 if($user!==null) {
-                    header ("Location: ../views/Admin.php"); 
+                    header ("Location: ../../controllers/admin/AdminController.php"); 
                 }
                 else{
-                    header ("Location: ../views/Login.php");
+                    header ("Location: ../../views/Login.php");
                 }
             }
         }
