@@ -97,7 +97,7 @@
                 <div class="checkout-item__info">
                     <div class="checkout-item__divide">
                         <h3><?php echo $room['room_name'] ?></h3>
-                        <p><?php echo number_format($room['total'])." VND" ?></p>
+                        <p><?php echo number_format($room['total'])." $" ?></p>
                     </div>
                     <div class="checkout_date checkout_divide">
                         <p><?php echo $room['check_in_day'] ?></p>
@@ -134,15 +134,15 @@
                         <a href="">Pricing condition</a>
                         <div class="checkout-item__divide">
                             <h2 >ROOM</h2>
-                            <p><?php echo number_format($room['price'])." VND" ?></p>
+                            <p><?php echo number_format($room['price'])." $" ?></p>
                         </div>
                         <div class="checkout-item__divide">
                             <h2>VAT</h2>
-                            <p><?php echo number_format($room['tax'])." VND" ?></p>
+                            <p><?php echo number_format($room['tax'])." $" ?></p>
                         </div>
                         <div class="checkout-item__divide">
                             <h2>TOTAL</h2>
-                            <p><?php echo number_format($room['total'])." VND" ?></p>
+                            <p><?php echo number_format($room['total'])." $" ?></p>
                         </div>
 
                     </div>
@@ -154,7 +154,7 @@
                     <h2>TOTAL(fees and taxes included)</h2>
                     <div class="checkout-item__divide">
                         <h3><?php echo Count($rooms)." Rooms" ?></h3>
-                        <p><?php echo number_format($total)." VND" ?></p>
+                        <p><?php echo number_format($total)." $" ?></p>
                     </div>
                 </div>
             </div>
@@ -170,7 +170,7 @@
 
                 <div class="checkout-item__divide">
                     <h3><?php echo Count($rooms)." Rooms" ?></h3>
-                    <p><?php echo number_format($total)." VND" ?></p>
+                    <p><?php echo number_format($total)." $" ?></p>
                 </div>
             </div>
             <div class="form_btn-mobile">
@@ -201,7 +201,7 @@
                 <div class="checkout-item__info">
                     <div class="checkout-item__divide">
                         <h3><?php echo $room['room_name'] ?></h3>
-                        <p><?php echo number_format($room['total'])." VND" ?></p>
+                        <p><?php echo number_format($room['total'])." $" ?></p>
                     </div>
                     <div class="checkout_date checkout_divide">
                         <p><?php echo $room['check_in_day'] ?></p>
@@ -238,15 +238,15 @@
                         <a href="">Pricing condition</a>
                         <div class="checkout-item__divide">
                             <h2 >ROOM</h2>
-                            <p><?php echo number_format($room['price'])." VND" ?></p>
+                            <p><?php echo number_format($room['price'])." $" ?></p>
                         </div>
                         <div class="checkout-item__divide">
                             <h2>VAT</h2>
-                            <p><?php echo number_format($room['tax'])." VND" ?></p>
+                            <p><?php echo number_format($room['tax'])." $" ?></p>
                         </div>
                         <div class="checkout-item__divide">
                             <h2>TOTAL</h2>
-                            <p><?php echo number_format($room['total'])." VND" ?></p>
+                            <p><?php echo number_format($room['total'])." $" ?></p>
                         </div>
 
                     </div>
@@ -258,7 +258,7 @@
                     <h2>TOTAL(fees and taxes included)</h2>
                     <div class="checkout-item__divide">
                         <h3><?php echo Count($rooms)." Rooms" ?></h3>
-                        <p><?php echo number_format($total)." VND" ?></p>
+                        <p><?php echo number_format($total)." $" ?></p>
                     </div>
                 </div>
                 <div class="form_btn-mobile">

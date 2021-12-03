@@ -5,7 +5,7 @@ class CartModel extends DbModel
   public function getCart($user_id)
   {
     $con = parent::connect();
-    $carts = $con->query("SELECT * FROM tbl_cart,tbl_room WHERE  user_id='$user_id' AND tbl_cart.room_id=tbl_room.room_id AND tbl_cart.checkin IS NULL");
+    $carts = $con->query("SELECT * FROM tbl_cart,tbl_room WHERE  user_id='$user_id' AND tbl_cart.room_id=tbl_room.room_id AND YEAR(tbl_cart.checkin)=2000");
 
     $rooms = array();
     if ($carts->num_rows > 0) {

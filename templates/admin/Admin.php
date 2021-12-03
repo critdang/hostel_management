@@ -12,24 +12,24 @@
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- APP CSS -->
-    <link rel="stylesheet" href="../assets/css/grid_raw.css"> 
-    <link rel="stylesheet" href="../assets/css/admin.css">
-    <link rel="stylesheet" href="../assets/css/grid_admin.css">
+    <link rel="stylesheet" href="../../assets/css/grid_raw.css"> 
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+    <link rel="stylesheet" href="../../assets/css/grid_admin.css">
 </head>
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebar-logo">
-            <img src="../assets/img/images/logo-lg.png" alt="Company logo">
+            <img src="../../assets/img/images/logo-lg.png" alt="Company logo">
             <div class="sidebar-close" id="sidebar-close">
                 <i class='bx bx-menu'></i>
             </div>
         </div>
         <div class="sidebar-user">
             <div class="sidebar-user-info">
-                <img src="../assets/img/images/logo-mb.png" alt="User picture" class="profile-image">
+                <img src="../../assets/img/images/logo-mb.png" alt="User picture" class="profile-image">
                 <div class="slider-user-name">
-                    Anh Huy
+                    <h1>dmin</h1>
                 </div>
             </div>
             <button class="btn btn-outline">
@@ -251,74 +251,28 @@
                         </div>
                         <div class="box-body">
                             <ul class="product-list">
+                              <!-- list -->
+                              <?php foreach ($products as $product) {
+                                 ?>
                                 <li class="product-list-item">
                                     <div class="item-info">
-                                        <img src="../assets/img/images/thumb-7.jpg" alt="product image">
+                                        <img src="../../assets/img/<?php echo $product['room_img'] ?>" alt="product image">
                                         <div class="item-name">
                                             <div class="product-name">
-                                                Jacket
+                                               <?php echo $product['room_name'] ?>
                                             </div>
                                             <div class="text-second">
-                                                Cloths
+                                               <?php echo $product['category_name'] ?>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item-sale-info">
                                             <div class="text-second">Sales</div>
-                                            <div class="product-sales">$5,930</div>
+                                            <div class="product-sales"><?php echo "$".$product['room_price'] ?></div>
                                     </div>
                                 </li>
-                                <li class="product-list-item">
-                                    <div class="item-info">
-                                        <img src="../assets/img/images/sneaker.jpg" alt="product image">
-                                        <div class="item-name">
-                                            <div class="product-name">
-                                                Sneaker
-                                            </div>
-                                            <div class="text-second">
-                                                Cloths
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-sale-info">
-                                            <div class="text-second">Sales</div>
-                                            <div class="product-sales">$5,930</div>
-                                    </div>
-                                </li>
-                                <li class="product-list-item">
-                                    <div class="item-info">
-                                        <img src="../assets/img/images/headphone.jpg" alt="product image">
-                                        <div class="item-name">
-                                            <div class="product-name">
-                                                Headphones
-                                            </div>
-                                            <div class="text-second">
-                                                Devices
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-sale-info">
-                                            <div class="text-second">Sales</div>
-                                            <div class="product-sales">$5,930</div>
-                                    </div>
-                                </li>
-                                <li class="product-list-item">
-                                    <div class="item-info">
-                                        <img src="../assets/img/images/backpack.jpg" alt="product image">
-                                        <div class="item-name">
-                                            <div class="product-name">
-                                                Backpack
-                                            </div>
-                                            <div class="text-second">
-                                                Bags
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-sale-info">
-                                            <div class="text-second">Sales</div>
-                                            <div class="product-sales">$5,930</div>
-                                    </div>
-                                </li>
+                                <?php } ?>
+                                <!-- endlist -->
                             </ul>
                         </div>
                     </div>
@@ -368,7 +322,7 @@
                                         <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <img src="../assets/img/images/user-image-2.png" alt="user 1 image">
+                                                <img src="../../assets/img/images/user-image-2.png" alt="user 1 image">
                                                 <span> Quang Dai</span>
                                             </div>
                                         </td>
@@ -391,7 +345,7 @@
                                         <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <img src="../assets/img/images/user-image-2.png" alt="user 1 image">
+                                                <img src="../../assets/img/images/user-image-2.png" alt="user 1 image">
                                                 <span> Duc Chuong</span>
                                             </div>
                                         </td>
@@ -413,7 +367,7 @@
                                         <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <img src="../assets/img/images/user-image-3.png" alt="user 1 image">
+                                                <img src="../../assets/img/images/user-image-3.png" alt="user 1 image">
                                                 <span> Quang Huy</span>
                                             </div>
                                         </td>
@@ -449,6 +403,6 @@
     <!-- Apexchart -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- APP JS -->
-    <script src="../js/admin.js"></script>
+    <script src="../../js/admin.js"></script>
 </body>
 </html>
