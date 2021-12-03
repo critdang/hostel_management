@@ -67,10 +67,11 @@
     <script type="text/javascript">
             window.addEventListener("scroll",function() { 
             var navbar = document.querySelector("header");
+            document.getElementsByClassName('book-btn-mobile');
             var sticky = navbar.offsetTop;
             var a = window.pageYOffset;
             console.log(window.scrollY);
-            navbar.classList.toggle("sticky",window.scrollY>0)
+            // navbar.classList.toggle("sticky",window.scrollY>0);
         })
     </script>
 
