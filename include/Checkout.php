@@ -89,7 +89,17 @@
                     <h3>CASA 3</h3>
                 </div>
             </div>
-           
+            <div class="checkout-item">
+                <div class="checkout-item__info">
+                    <div class="checkout_date checkout_divide">
+                        <h3>December 2,2021</h3>
+                        <i class="fas fa-arrow-right"></i>
+                        <h3>December 4,2021</h3>
+                    </div>
+                        <p>2 nights</p>
+                        <p>3 adults</p>
+                </div>
+            </div>
             <!-- Room -->
             <?php foreach ($rooms as $room) {
             ?>
@@ -99,11 +109,7 @@
                         <h3><?php echo $room['room_name'] ?></h3>
                         <p><?php echo number_format($room['total'])." VND" ?></p>
                     </div>
-                    <div class="checkout_date checkout_divide">
-                        <p><?php echo $room['check_in_day'] ?></p>
-                        <i class="fas fa-arrow-right"></i>
-                        <p><?php echo $room['check_out_day'] ?></p>
-                    </div>
+                    <p>1 adult</p>
                 </div>
                 <div class="checkout-item__detail">
                     <button class="dropbtn">
@@ -153,24 +159,42 @@
                 <div class="checkout-item__info">
                     <h2>TOTAL(fees and taxes included)</h2>
                     <div class="checkout-item__divide">
-                        <h3><?php echo Count($rooms)." Rooms" ?></h3>
-                        <p><?php echo number_format($total)." VND" ?></p>
+                        <h3>Room 3/3</h3>
+                        <p>764,43 $</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- checkout for mobile -->
-        <div class="checkout-mobile sticky-checkout__bottom">
+        <!-- <input type="checkbox" name class="checkout-input" id="checkout-mobile-input">
+        <label for="checkout-mobile-input" class="header__nav-overlay"></label>
+        <nav class="checkout-mobile__order">
+            <h1>he</h1>
+            <ul class="checkout-menu">
+                <li class=" header__navbar-mobile-item">
+                    <div class="checkout-item__divide">
+                        <h1>Your Stay</h1>
+
+                    <label for="checkout-mobile-input" class="checkout-mobile__order-close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                    </div>
+                </li>
+            </ul>
+        </nav> -->
+        <div class="checkout-mobile sticky-checkout__mobile">
             <div class="checkout-item__info">
                 <div class="checkout-item__divide">
                     <h2>TOTAL(fees and taxes included)</h2>
+                    <!-- <input type="checkbox" id="check">
+                    <label for="checkout-mobile-input">
+                        Detail
+                    </label> -->
                     <button class="modal-btn">detail</button>
-
                 </div>
 
                 <div class="checkout-item__divide">
-                    <h3><?php echo Count($rooms)." Rooms" ?></h3>
-                    <p><?php echo number_format($total)." VND" ?></p>
+                    <h3>Room 3/3</h3>
+                    <p>764,43 $</p>
                 </div>
             </div>
             <div class="form_btn-mobile">
@@ -181,90 +205,23 @@
         <div class="checkout-mobile__modal-bg">
             <div class="checkout-mobile__modal">
                 <!-- box see on the screen -->
-                
+                <div class="checkout-item__divide">
+                        <h1>Your Stay</h1>
+                <button class="checkout-mobile__order-close modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                </div>
                 <div class="checkout-item">
-                    <div class="checkout-item__title">
-
-                        <div class="checkout-item__divide">
-                                <h1>Your Stay</h1>
-                        <button class="checkout-mobile__order-close modal-close">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Room -->
-            <?php foreach ($rooms as $room) {
-            ?>
-            <div class="checkout-item">
-                <div class="checkout-item__info">
-                    <div class="checkout-item__divide">
-                        <h3><?php echo $room['room_name'] ?></h3>
-                        <p><?php echo number_format($room['total'])." VND" ?></p>
-                    </div>
-                    <div class="checkout_date checkout_divide">
-                        <p><?php echo $room['check_in_day'] ?></p>
+                    <div class="checkout-item__info">
+                        <div class="checkout_date checkout_divide">
+                        <h3>December 2,2021</h3>
                         <i class="fas fa-arrow-right"></i>
-                        <p><?php echo $room['check_out_day'] ?></p>
+                        <h3>December 4,2021</h3>
+                        </div>
+                        <p>2 nights</p>
+                        <p>3 adults</p>
                     </div>
                 </div>
-                <div class="checkout-item__detail">
-                    <button class="dropbtn">
-                        <h5>SEE THE ROOM 1 DETAILS</h5>  
-                        <i onclick="myFunction(this)" class="fas fa-chevron-down"></i>
-                    </button>
-                    <!-- <button onclick="myFunction()" class="dropbtn" data-index="num2"> -->
-                    
-                    <div id="checkout-dropdown" class="dropdown-content">
-                        
-                        <p >OPERA WING, PREMIUM ROOM, QUEEN BED</p>
-                        <div class="checkout-seperate">
-                        <p>
-                        <?php echo $room['rooms'] > 1 ? $room['rooms'] . " rooms" : $room['rooms'] . " room" ?> 
-                        </p>
-                        <div class="test">
-                        <p>
-                                <?php echo $room['adults'] > 1 ? $room['adults'] . " adults" : $room['adults'] . " adult" ?> 
-                            </p>
-                            <p>
-                                 <?php echo $room['children'] > 1 ? $room['children'] . " children" : $room['children'] . " child" ?> 
-                            </p>
-                        </div>
-                        
-                        </div>
-                            
-                            
-                        <a href="">Pricing condition</a>
-                        <div class="checkout-item__divide">
-                            <h2 >ROOM</h2>
-                            <p><?php echo number_format($room['price'])." VND" ?></p>
-                        </div>
-                        <div class="checkout-item__divide">
-                            <h2>VAT</h2>
-                            <p><?php echo number_format($room['tax'])." VND" ?></p>
-                        </div>
-                        <div class="checkout-item__divide">
-                            <h2>TOTAL</h2>
-                            <p><?php echo number_format($room['total'])." VND" ?></p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <?php } ?>
-            <div class="checkout-item">
-                <div class="checkout-item__info">
-                    <h2>TOTAL(fees and taxes included)</h2>
-                    <div class="checkout-item__divide">
-                        <h3><?php echo Count($rooms)." Rooms" ?></h3>
-                        <p><?php echo number_format($total)." VND" ?></p>
-                    </div>
-                </div>
-                <div class="form_btn-mobile">
-                    <input type="submit" class="form-submit btn-primary" value="Book">
-                </div>
-            </div>
             </div>
         </div>
     </div>

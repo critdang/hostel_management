@@ -46,6 +46,7 @@
             include('controllers/CartController.php');
         }elseif($page=='checkout') {
             include('controllers/CheckoutController.php');
+            // include('include/Checkout.php');
         } 
         else{
             // home
@@ -55,6 +56,10 @@
         
         // footer
         include('include/footer.php');
+        if($page!='checkout'){        
+            include('include/sticky-book_mobi.php');
+        }
+
         ?>
     </div>
     <!-- Navbar -->
@@ -149,6 +154,22 @@
             // data nhận được từ formValues của enableInputs 
           onSubmit: function(data) {
           }
+        })
+    </script>
+
+    <!-- modal  -->
+    <script>
+        var modalBtn = document.querySelector('.modal-btn');
+        // var modalBg = document.querySelector('.modal-bg');
+        var modalBg = document.querySelector('.checkout-mobile__modal-bg');
+        var modalClose = document.querySelector('.modal-close');
+        modalBtn.addEventListener('click', function(){
+            modalBg.classList.add('bg-active');
+        })
+
+        modalClose.addEventListener("click", function() {
+            modalBg.classList.remove('bg-active');
+            
         })
     </script>
 </body>

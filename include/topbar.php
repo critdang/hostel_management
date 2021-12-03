@@ -98,29 +98,13 @@
                             </a>
                         </div>
                     </li>
-                    <!-- <li class="header__navbar-mobile-item">
-                        <a href="" class="header__navbar-mobile-link">
-                            <i class="header__navbar-icon fab fa-instagram"></i>
-                        </a>
-                    </li> -->
                     <li class="header__navbar-mobile-item">
                         <button type="submit" class="header__navbar-book--btn ">
                             Book
                         </button>
                     </li>
                 </ul>
-                <!-- <ul class="header__navbar-list">
-                    <li class="header__navbar-item">
-                        <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-facebook-f"></i>
-                        
-                        </a>
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-instagram"></i>
-                        </a>
-                    </li> -->
+                
                 </ul>
                 
             </nav>
