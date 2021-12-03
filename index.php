@@ -45,8 +45,8 @@
         }elseif($page=='detail') {
             include('controllers/CartController.php');
         }elseif($page=='checkout') {
-            // include('controllers/CheckoutController.php');
-            include('include/Checkout.php');
+            include('controllers/CheckoutController.php');
+            // include('include/Checkout.php');
         } 
         else{
             // home
@@ -56,6 +56,10 @@
         
         // footer
         include('include/footer.php');
+        if($page!='checkout'){        
+            include('include/sticky-book_mobi.php');
+        }
+
         ?>
     </div>
     <!-- Navbar -->

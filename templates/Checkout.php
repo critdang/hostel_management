@@ -159,24 +159,112 @@
                 </div>
             </div>
         </div>
-        <input type="checkbox" name="" class="header__nav-input" id="header__nav-mobile-input">
-        <label for="header__nav-mobile-input" class="header__nav-overlay"></label>
-        <div class="checkout-mobile sticky-checkout__mobile">
+        <!-- checkout for mobile -->
+        <div class="checkout-mobile sticky-checkout__bottom">
             <div class="checkout-item__info">
                 <div class="checkout-item__divide">
                     <h2>TOTAL(fees and taxes included)</h2>
-                    <label for="header__nav-mobile-input">
-                        button
-                    </label>
+                    <button class="modal-btn">detail</button>
+
                 </div>
 
                 <div class="checkout-item__divide">
-                    <h3>Room 3/3</h3>
-                    <p>764,43 $</p>
+                    <h3><?php echo Count($rooms)." Rooms" ?></h3>
+                    <p><?php echo number_format($total)." VND" ?></p>
                 </div>
             </div>
             <div class="form_btn-mobile">
+                <input type="submit" class="form-submit btn-primary" value="Book">
+            </div>
+        </div>
+        <!-- modal-bg to animation-->
+        <div class="checkout-mobile__modal-bg">
+            <div class="checkout-mobile__modal">
+                <!-- box see on the screen -->
+                
+                <div class="checkout-item">
+                    <div class="checkout-item__title">
+
+                        <div class="checkout-item__divide">
+                                <h1>Your Stay</h1>
+                        <button class="checkout-mobile__order-close modal-close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Room -->
+            <?php foreach ($rooms as $room) {
+            ?>
+            <div class="checkout-item">
+                <div class="checkout-item__info">
+                    <div class="checkout-item__divide">
+                        <h3><?php echo $room['room_name'] ?></h3>
+                        <p><?php echo number_format($room['total'])." VND" ?></p>
+                    </div>
+                    <div class="checkout_date checkout_divide">
+                        <p><?php echo $room['check_in_day'] ?></p>
+                        <i class="fas fa-arrow-right"></i>
+                        <p><?php echo $room['check_out_day'] ?></p>
+                    </div>
+                </div>
+                <div class="checkout-item__detail">
+                    <button class="dropbtn">
+                        <h5>SEE THE ROOM 1 DETAILS</h5>  
+                        <i onclick="myFunction(this)" class="fas fa-chevron-down"></i>
+                    </button>
+                    <!-- <button onclick="myFunction()" class="dropbtn" data-index="num2"> -->
+                    
+                    <div id="checkout-dropdown" class="dropdown-content">
+                        
+                        <p >OPERA WING, PREMIUM ROOM, QUEEN BED</p>
+                        <div class="checkout-seperate">
+                        <p>
+                        <?php echo $room['rooms'] > 1 ? $room['rooms'] . " rooms" : $room['rooms'] . " room" ?> 
+                        </p>
+                        <div class="test">
+                        <p>
+                                <?php echo $room['adults'] > 1 ? $room['adults'] . " adults" : $room['adults'] . " adult" ?> 
+                            </p>
+                            <p>
+                                 <?php echo $room['children'] > 1 ? $room['children'] . " children" : $room['children'] . " child" ?> 
+                            </p>
+                        </div>
+                        
+                        </div>
+                            
+                            
+                        <a href="">Pricing condition</a>
+                        <div class="checkout-item__divide">
+                            <h2 >ROOM</h2>
+                            <p><?php echo number_format($room['price'])." VND" ?></p>
+                        </div>
+                        <div class="checkout-item__divide">
+                            <h2>VAT</h2>
+                            <p><?php echo number_format($room['tax'])." VND" ?></p>
+                        </div>
+                        <div class="checkout-item__divide">
+                            <h2>TOTAL</h2>
+                            <p><?php echo number_format($room['total'])." VND" ?></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
+            <div class="checkout-item">
+                <div class="checkout-item__info">
+                    <h2>TOTAL(fees and taxes included)</h2>
+                    <div class="checkout-item__divide">
+                        <h3><?php echo Count($rooms)." Rooms" ?></h3>
+                        <p><?php echo number_format($total)." VND" ?></p>
+                    </div>
+                </div>
+                <div class="form_btn-mobile">
                     <input type="submit" class="form-submit btn-primary" value="Book">
+                </div>
+            </div>
             </div>
         </div>
     </div>
