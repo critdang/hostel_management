@@ -182,7 +182,12 @@
                             </div>
                             <div class="counter-info">
                                 <div class="counter-count">
-                                    6578
+                                <?php foreach ($orders as $order) {
+                                 ?>
+                                    <?php echo $order['order_id'] ?>
+                                    <?php echo '1' ?>
+                                    
+                                <?php } ?>
                                 </div>
                                 <i class='bx bx-shopping-bag' ></i>
                             </div>
